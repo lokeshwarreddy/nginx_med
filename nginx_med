@@ -1,0 +1,6 @@
+PORT=$1
+if [ ! $PORT ]
+then
+  PORT=80;
+fi
+docker run -d --name="nginx_med" -p $PORT:80 -v $PWD/website:/var/www/html/website lokesh/nginx_med:v1

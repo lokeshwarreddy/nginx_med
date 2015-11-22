@@ -1,0 +1,1 @@
+docker build -t="lokesh/nginx_med:v1" .
